@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F0F0F0;
+		}
+		form {
+			background-color: #FFFFFF;
+			padding: 20px;
+			max-width: 400px;
+			margin: 0 auto;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		.container {
+			padding: 16px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+	</style>
+</head>
+<body>
+      <center>
+	<h2>Login Form</h2>
+      </center>
+
+	<form action="/login" method="post">
+		<div class="imgcontainer">
+			<img src="https://play-lh.googleusercontent.com/fkeirQGB9bXZ8sPNiplSTh7wLz-O7a83caEiFZuXZk8nsO9vFov-w9sJvvLIkiUfDuuM" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+			<label for="username"><b>Username</b></label>
+			<input type="text" id="username" class="form-control" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" id="password" class="form-control" placeholder="Enter Password" name="password" required>
+			
+			<button type="submit" onclick="addUser()">Login</button>
+
+		</div>
+
+
+	</form>
+	<script src="kwitter.js"</script>
+</body>
+</html>
